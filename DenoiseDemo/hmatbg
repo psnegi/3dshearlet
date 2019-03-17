@@ -1,0 +1,4 @@
+#!/bin/csh -f 
+unsetenv DISPLAY
+date >> $2
+nohup  matlab -nodisplay  <$1 |tail -n +10  >> $2 &
