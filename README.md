@@ -1,4 +1,4 @@
-#3-D discrete shearlet transform
+# 3-D discrete shearlet transform
 
 This repository contains the MATLAB/Octave  implemtation of [3D discrete shearlet transform](https://www.math.uh.edu/~dlabate/3DDST_IEEE_2011.pdf) and a video denosing demo using 3Dshearlet
 
