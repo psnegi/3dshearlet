@@ -7,7 +7,7 @@
 0. [Citation](#citation)
 0. [Disclaimer and known issues](#disclaimer)
 0. [Installation](#INSTALLATION)
-0. [Demo](#RUNNING_DENOISING_DEMO)
+0. [Gaussina Denoising  Demo](#DEMO)
 
 
 ## Introduction
@@ -67,7 +67,7 @@ Restriction on the size of .mat file
 Due to nature of upsampling and downsampling for better denoising performance
 dimension of data need to be divisible by 3*2^(number of decomposition level required).
 
-## RUNNING_DENOISING_DEMO
+## DEMO
 
 Gaussian Denoising script is  in **DenoiseDemo** folder with file name **main.m**
 
