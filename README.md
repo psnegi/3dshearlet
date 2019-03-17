@@ -12,7 +12,7 @@
 
 ## Introduction
 
-This repository contains the MATLAB/Octave  implemtation of [3D discrete shearlet transform](https://www.math.uh.edu/~dlabate/3DDST_IEEE_2011.pdf) and a video denosing demo using 3Dshearlet
+This repository contains the MATLAB/Octave  implementation of [3D discrete shearlet transform](https://www.math.uh.edu/~dlabate/3DDST_IEEE_2011.pdf) and a video denosing demo using 3Dshearlet
 
 By 	[Pooran Singh Negi](https://sites.google.com/site/poorannegi/) and [Demetrio Labate](https://www.math.uh.edu/~dlabate/index.html)
 
@@ -43,17 +43,16 @@ If you use 3D Shearlet in your research, please cite:
 
 ## INSTALLATION
 
-### Ubunutu
+### Ubuntu
 #### Using octave
 See this link for instllation instruction of octave in ubuntu Linux
 
 https://askubuntu.com/questions/645600/how-to-install-octave-4-0-0-in-ubuntu-14-04
 
-In CONNFFT_Folder run
-** mkoctfile --mex inplaceprod1.c -o inplaceprod.mex **
 
-Note: You make need to install mkoctfile by running
-*sudo apt-get install liboctave-dev*
+**Change convnfft in shDec to convn if you plan to use octave to run this code. Code can run slow**
+
+
 #### MATLAB
 
 For running 3DShearlet code user need to  run
@@ -71,14 +70,14 @@ dimension of data need to be divisible by 3*2^(number of decomposition level req
 
 Gaussian Denoising script is  in **DenoiseDemo** folder with file name **main.m**
 
-If user need to save data please use aproriate save statement after deonising is done.
-Currrent script setting  denoises coastguard_sequence with simulated noise.
+If user need to save data please use appropriate save statement after deonising is done.
+Current script setting  denoises coastguard_sequence with simulated noise.
 This script can be run in background in Unix/Linux using hmatbg in DenoiseDemo folder.
 ./hmatbg main.m outfile 
 hmatbg can be modified  to change priority level using nice command.
 
 
-For data corrupted by unknown Gaussian noise parameter, sdest3 funtion in Util directory
+For data corrupted by unknown Gaussian noise parameter, sdest3 function in Util directory
 can used to estimate standard deviation of the noise which is based on median of the wavelet coefficients at the finer scale.
 
 
