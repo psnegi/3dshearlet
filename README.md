@@ -1,20 +1,35 @@
 # 3-D discrete shearlet transform
 
+
+## Table of Contents
+
+0. [Introduction](#introduction)
+0. [Citation](#citation)
+0. [Disclaimer and known issues](#disclaimer)
+0. [Installation](#INSTALLATION)
+0. [Demo](#RUNNING_DENOISING_DEMO)
+
+
+## Introduction
+
 This repository contains the MATLAB/Octave  implemtation of [3D discrete shearlet transform](https://www.math.uh.edu/~dlabate/3DDST_IEEE_2011.pdf) and a video denosing demo using 3Dshearlet
 
 By 	[Pooran Singh Negi](https://sites.google.com/site/poorannegi/) and [Demetrio Labate](https://www.math.uh.edu/~dlabate/index.html)
 
 Department of Mathematics, University of Houston
 
+
+## Disclaimer
 This software is provided "as-is", without any express or implied
 warranty. In no event will the authors be held liable for any 
 damages arising from the use of this software.
 
 
-# Citation
+## Citation
+
 If you use 3D Shearlet in your research, please cite:
 
-@article{negilabate20123,
+ @article{negilabate20123,
   title={3-D discrete shearlet transform and video processing},
   author={Negi, Pooran Singh and Labate, Demetrio},
   journal={IEEE transactions on Image Processing},
@@ -23,12 +38,13 @@ If you use 3D Shearlet in your research, please cite:
   pages={2944--2954},
   year={2012},
   publisher={IEEE}
-}
+ }
 
 
-# INSTALL INSTRUCTIONS for octave
-## Ubunutu
-### Using octave
+## INSTALLATION
+
+### Ubunutu
+#### Using octave
 See this link for instllation instruction of octave in ubuntu Linux
 
 https://askubuntu.com/questions/645600/how-to-install-octave-4-0-0-in-ubuntu-14-04
@@ -38,7 +54,7 @@ In CONNFFT_Folder run
 
 Note: You make need to install mkoctfile by running
 *sudo apt-get install liboctave-dev*
-### MATLAB
+#### MATLAB
 
 For running 3DShearlet code user need to  run
 convnfft_install.m from CONVNFFT_Folder  first.
@@ -51,7 +67,7 @@ Restriction on the size of .mat file
 Due to nature of upsampling and downsampling for better denoising performance
 dimension of data need to be divisible by 3*2^(number of decomposition level required).
 
-# RUNNING DENOISING DEMO
+## RUNNING_DENOISING_DEMO
 
 Gaussian Denoising script is  in **DenoiseDemo** folder with file name **main.m**
 
@@ -64,6 +80,7 @@ hmatbg can be modified  to change priority level using nice command.
 
 For data corrupted by unknown Gaussian noise parameter, sdest3 funtion in Util directory
 can used to estimate standard deviation of the noise which is based on median of the wavelet coefficients at the finer scale.
+
 
 *NOTE:* Files in 3DBP directory for doing bandpass are from SurfBox toolbox implemented by  Yue Lu and Minh N. Do
 
