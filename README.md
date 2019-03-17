@@ -30,14 +30,14 @@ damages arising from the use of this software.
 If you use 3D Shearlet in your research, please cite:
 
  @article{negilabate20123,
-  title={3-D discrete shearlet transform and video processing},
-  author={Negi, Pooran Singh and Labate, Demetrio},
-  journal={IEEE transactions on Image Processing},
-  volume={21},
-  number={6},
-  pages={2944--2954},
-  year={2012},
-  publisher={IEEE}
+         title = {3-D discrete shearlet transform and video processing},
+         author = {Negi, Pooran Singh and Labate, Demetrio},
+         journal = {IEEE transactions on Image Processing},
+         volume = {21},
+         number = {6},
+         pages = {2944--2954},
+         year = {2012},
+         publisher = {IEEE}
  }
 
 
