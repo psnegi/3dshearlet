@@ -29,7 +29,7 @@ damages arising from the use of this software.
 
 If you use 3D Shearlet in your research, please cite:
 
- @article{negilabate20123,
+	@article{negilabate20123,
          title = {3-D discrete shearlet transform and video processing},
          author = {Negi, Pooran Singh and Labate, Demetrio},
          journal = {IEEE transactions on Image Processing},
@@ -38,13 +38,6 @@ If you use 3D Shearlet in your research, please cite:
          pages = {2944--2954},
          year = {2012},
          publisher = {IEEE}
- }
-
-	@article{He2015,
-		author = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
-		title = {Deep Residual Learning for Image Recognition},
-		journal = {arXiv preprint arXiv:1512.03385},
-		year = {2015}
 	}
 
 
