@@ -55,13 +55,13 @@ https://askubuntu.com/questions/645600/how-to-install-octave-4-0-0-in-ubuntu-14-
 
 #### MATLAB
 
-For running 3DShearlet code user need to  run
+For running 3DShearlet code, user need to  run
 convnfft_install.m from CONVNFFT_Folder  first.
 
 Please use latest CONVNFFT from
 https://www.mathworks.com/matlabcentral/fileexchange/24504-fft-based-convolution to make sure it is compatible with latest MATLAB release.
 
-Restriction on the size of .mat file
+##### Restriction on the size of .mat file
 
 Due to nature of upsampling and downsampling for better denoising performance
 dimension of data need to be divisible by 3*2^(number of decomposition level required).
