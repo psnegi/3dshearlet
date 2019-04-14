@@ -1,3 +1,4 @@
+%This function counts how many polar points goes through the same cartesian point.
 function F=PolFreq(n, X, Y,Z)
 F=zeros(n,n,n);
 for j =1:n

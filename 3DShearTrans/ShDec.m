@@ -25,7 +25,7 @@ for l=1:level
         if strcmp(dataClass,'single')
 	       shCoeff{l}{l2,l1}=single(convnfft(L{l},F{pyrCone,l}{l2,l1},'same'));
         elseif strcmp(dataClass,'double')
-          shCoeff{l}{l2,l1}=double(convn(L{l},F{pyrCone,l}{l2,l1},'same'));
+          shCoeff{l}{l2,l1}=double(convnfft(L{l},F{pyrCone,l}{l2,l1},'same'));
         elseif strcmp(dataClass,'uint8')
           shCoeff{l}{l2,l1}=uint8(convnfft(L{l},F{pyrCone,l}{l2,l1},'same'));
         end

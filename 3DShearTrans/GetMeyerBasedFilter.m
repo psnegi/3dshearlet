@@ -30,6 +30,10 @@ F{3,l}=cell(numDir,numDir);
 A=zeros(cubeSize,cubeSize,cubeSize,dataClass);
   
 for c=1:3
+% building meyer filer in 3-d radial grid
+% Think of it as 3-d rectangle. Middle radial, coordiantes goes along the length.
+% center have response 1.
+% as one moves away from the center, filter response decreases(check meyer filter description) 
 	mRadial=ones(shift+1,cubeSize,shift+1,dataClass);
   mRadial( [1 shift+1],1:cubeSize,1: shift+1)=.5;
   mRadial(1: shift+1,1: cubeSize,[1 shift+1])=.5;  
@@ -37,8 +41,12 @@ for c=1:3
 
   l2=1;
   l1=1;
+  
+  % mRadialIdx specifies radial region boundary for filter with orientation l1, l2
+  % l1 controls first (i) radial coordinates and l2 controls third (j) coordinates
   mRadialIdx=[(l1-1)*shift+1  l1*shift+1 ;1 cubeSize ; (l2-1)*shift+1  l2*shift+1  ];
 
+  
   F{c,l}{l2,l1}=PolarToRec(mRadialIdx,mRadial,cubeSize,P{c},PF{c} );
   A=A+F{c,l}{l2,l1};
 

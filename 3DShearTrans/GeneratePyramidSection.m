@@ -1,3 +1,7 @@
+%Genrates X, Y, Z (cartesian coordiantes of polar corrdinates)
+% INPUT: cubeSide:: size of 3d cubeSide
+% OUTPUT: P:: X, YZ coordinates of the cone 1, 2 ,3
+%         F:: how may ploar point fall into same cartesian coordiantes
 function [P,F]=GeneratePyramidSection(cubeSide)
 P=cell(1,4);
 [P{1}.X,P{1}.Y,P{1}.Z]= GenerateXYZ(cubeSide);
